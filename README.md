@@ -10,4 +10,6 @@ Cloud ☁️ Expertise:
 * Azure Services: I work with Functions, Cosmos DB, Service Bus, and more to build scalable cloud solutions.
 * Google Cloud: Proficient in deploying services using Cloud Functions and Cloud Run.
 
+Supporting Skills: Docker, GitHub Actions, Azure DevOps 
+
 I’m all about continuous learning and taking on new web development challenges. My goal is to deliver high-quality work that aligns with your expectations. Communication is key for me, and I’m always open to feedback.
