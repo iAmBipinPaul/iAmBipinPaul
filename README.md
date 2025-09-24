@@ -1,6 +1,6 @@
 ### ASP.NET Core, Blazor & Azure Cloud Expert | 7+ Years Exp.
 
-Hi! I’m a dedicated .NET Core and Blazor developer with over 5 years of experience in building web applications across different sectors, including social media and healthcare. My focus is on backend services, but I’m also skilled in full-stack projects
+Hi! I’m a dedicated .NET Core and Blazor developer with over 7 years of experience in building web applications across different sectors, including social media and healthcare. My focus is on backend services, but I’m also skilled in full-stack projects
 
 Core  Skills:
 * ASP.NET Core & Blazor: Creating dynamic and responsive web applications.
