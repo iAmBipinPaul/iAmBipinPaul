@@ -1,54 +1,54 @@
 <svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="1200" height="400" fill="#2D2D2D"/>
+  <rect width="1200" height="400" fill="#0B1020"/>
   
   <!-- Decorative Elements -->
-  <rect x="0" y="0" width="12" height="400" fill="#0CAC5C"/>
-  <rect x="1188" y="0" width="12" height="400" fill="#0CAC5C"/>
+  <rect x="0" y="0" width="12" height="400" fill="#4B2AE8"/>
+  <rect x="1188" y="0" width="12" height="400" fill="#4B2AE8"/>
   
   <!-- Geometric Accents - KEPT IN ORIGINAL POSITION -->
-  <polygon points="0,0 300,0 0,150" fill="#66D4A3" opacity="0.2"/>
-  <polygon points="1200,400 900,400 1200,250" fill="#66D4A3" opacity="0.2"/>
+  <polygon points="0,0 300,0 0,150" fill="#12C7B7" opacity="0.2"/>
+  <polygon points="1200,400 900,400 1200,250" fill="#12C7B7" opacity="0.2"/>
   
   <!-- Tech Logos - KEPT IN ORIGINAL POSITION -->
   <g opacity="0.15">
     <!-- C# Logo - Top Left -->
     <g transform="translate(120, 90) scale(0.6)">
-      <rect x="-40" y="-40" width="80" height="80" rx="10" fill="#0CAC5C"/>
+      <rect x="-40" y="-40" width="80" height="80" rx="10" fill="#4B2AE8"/>
       <text x="0" y="20" font-family="Arial, sans-serif" font-size="70" font-weight="bold" text-anchor="middle" fill="#FFFFFF">C#</text>
     </g>
     
     <!-- .NET Core Logo - Top Right -->
     <g transform="translate(1080, 90) scale(0.6)">
-      <circle cx="0" cy="0" r="50" fill="#0CAC5C"/>
+      <circle cx="0" cy="0" r="50" fill="#4B2AE8"/>
       <text x="0" y="15" font-family="Arial, sans-serif" font-size="30" font-weight="bold" text-anchor="middle" fill="#FFFFFF">.NET</text>
     </g>
     
     <!-- Blazor Logo - Bottom Left -->
     <g transform="translate(180, 270) scale(0.5)">
-      <path d="M-40,-50 L40,-50 L0,50 Z" fill="#0CAC5C"/>
-      <circle cx="0" cy="-10" r="20" fill="#2D2D2D"/>
+      <path d="M-40,-50 L40,-50 L0,50 Z" fill="#4B2AE8"/>
+      <circle cx="0" cy="-10" r="20" fill="#0B1020"/>
     </g>
     
     <!-- Azure Cloud Logo - Bottom Right -->
     <g transform="translate(1020, 270) scale(0.6)">
-      <path d="M-30,-15 Q-10,-40 10,-15 Q25,-35 40,-15 L40,15 L-30,15 Z" fill="#0CAC5C"/>
+      <path d="M-30,-15 Q-10,-40 10,-15 Q25,-35 40,-15 L40,15 L-30,15 Z" fill="#4B2AE8"/>
     </g>
     
     <!-- SQL Database Symbol - Center Left -->
     <g transform="translate(300, 170) scale(0.5)">
-      <path d="M-30,-40 Q-30,-60 0,-60 Q30,-60 30,-40 L30,40 Q30,60 0,60 Q-30,60 -30,40 Z" fill="#0CAC5C"/>
+      <path d="M-30,-40 Q-30,-60 0,-60 Q30,-60 30,-40 L30,40 Q30,60 0,60 Q-30,60 -30,40 Z" fill="#4B2AE8"/>
       <path d="M-30,-40 Q-30,-20 0,-20 Q30,-20 30,-40" fill="none" stroke="#FFFFFF" stroke-width="4"/>
       <path d="M-30,0 Q-30,20 0,20 Q30,20 30,0" fill="none" stroke="#FFFFFF" stroke-width="4"/>
     </g>
     
     <!-- Docker Container Symbol - Center Right -->
     <g transform="translate(900, 170) scale(0.5)">
-      <rect x="-40" y="-30" width="30" height="20" fill="#0CAC5C"/>
-      <rect x="-40" y="-5" width="30" height="20" fill="#0CAC5C"/>
-      <rect x="-5" y="-30" width="30" height="20" fill="#0CAC5C"/>
-      <rect x="-5" y="-5" width="30" height="20" fill="#0CAC5C"/>
-      <rect x="-5" y="20" width="30" height="20" fill="#0CAC5C"/>
+      <rect x="-40" y="-30" width="30" height="20" fill="#4B2AE8"/>
+      <rect x="-40" y="-5" width="30" height="20" fill="#4B2AE8"/>
+      <rect x="-5" y="-30" width="30" height="20" fill="#4B2AE8"/>
+      <rect x="-5" y="-5" width="30" height="20" fill="#4B2AE8"/>
+      <rect x="-5" y="20" width="30" height="20" fill="#4B2AE8"/>
     </g>
   </g>
   
@@ -56,56 +56,56 @@
   <text x="800" y="145" font-family="Arial, sans-serif" font-size="60" font-weight="700" text-anchor="middle" fill="#FFFFFF">Bipin Paul</text>
   
   <!-- Underline -->
-  <line x1="570" y1="165" x2="1030" y2="165" stroke="#0CAC5C" stroke-width="4"/>
+  <line x1="570" y1="165" x2="1030" y2="165" stroke="#4B2AE8" stroke-width="4"/>
   
   <!-- Primary Tagline -->
-  <text x="800" y="205" font-family="Arial, sans-serif" font-size="22" font-weight="500" text-anchor="middle" fill="#F5F5F5">ASP.NET Core, Blazor &amp; Azure Cloud Expert | 7+ Years Exp.</text>
+  <text x="800" y="205" font-family="Arial, sans-serif" font-size="22" font-weight="500" text-anchor="middle" fill="#F3F6FB">ASP.NET Core, Blazor &amp; Azure Cloud Expert | 7+ Years Exp.</text>
   
   <!-- Core Technologies - Moved closer to tagline (reduced space) -->
   <g font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">
-    <rect x="440" y="230" width="140" height="30" rx="15" fill="#0CAC5C" opacity="0.8"/>
+    <rect x="440" y="230" width="140" height="30" rx="15" fill="#4B2AE8" opacity="0.8"/>
     <text x="510" y="250" text-anchor="middle">.NET Core</text>
     
-    <rect x="600" y="230" width="140" height="30" rx="15" fill="#0CAC5C" opacity="0.8"/>
+    <rect x="600" y="230" width="140" height="30" rx="15" fill="#4B2AE8" opacity="0.8"/>
     <text x="670" y="250" text-anchor="middle">Blazor</text>
     
-    <rect x="760" y="230" width="140" height="30" rx="15" fill="#0CAC5C" opacity="0.8"/>
+    <rect x="760" y="230" width="140" height="30" rx="15" fill="#4B2AE8" opacity="0.8"/>
     <text x="830" y="250" text-anchor="middle">Azure Cloud</text>
     
-    <rect x="920" y="230" width="140" height="30" rx="15" fill="#0CAC5C" opacity="0.8"/>
+    <rect x="920" y="230" width="140" height="30" rx="15" fill="#4B2AE8" opacity="0.8"/>
     <text x="990" y="250" text-anchor="middle">MS SQL/PostgreSQL</text>
   </g>
   
   <!-- Supporting Skills - Moved up to reduce space -->
   <g font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">
-    <rect x="490" y="270" width="100" height="25" rx="12.5" fill="#474747" opacity="0.8"/>
+    <rect x="490" y="270" width="100" height="25" rx="12.5" fill="#2A3142" opacity="0.8"/>
     <text x="540" y="286" text-anchor="middle">Docker</text>
     
-    <rect x="605" y="270" width="130" height="25" rx="12.5" fill="#474747" opacity="0.8"/>
+    <rect x="605" y="270" width="130" height="25" rx="12.5" fill="#2A3142" opacity="0.8"/>
     <text x="670" y="286" text-anchor="middle">GitHub Actions</text>
     
-    <rect x="750" y="270" width="120" height="25" rx="12.5" fill="#474747" opacity="0.8"/>
+    <rect x="750" y="270" width="120" height="25" rx="12.5" fill="#2A3142" opacity="0.8"/>
     <text x="810" y="286" text-anchor="middle">Azure DevOps</text>
     
-    <rect x="885" y="270" width="130" height="25" rx="12.5" fill="#474747" opacity="0.8"/>
+    <rect x="885" y="270" width="130" height="25" rx="12.5" fill="#2A3142" opacity="0.8"/>
     <text x="950" y="286" text-anchor="middle">Google Cloud</text>
   </g>
   
   <!-- Contact/Social Information Links - Adjusted after removing Bluesky -->
   <g font-family="Consolas, monospace" font-size="13">
     <!-- Website URL - Shifted right to better center the links -->
-    <text x="530" y="330" fill="#66D4A3">bipinpaul.com</text>
+    <text x="530" y="330" fill="#12C7B7">bipinpaul.com</text>
     
     <!-- Separator with exactly one space -->
-    <text x="625" y="330" fill="#F5F5F5">|</text>
+    <text x="625" y="330" fill="#F3F6FB">|</text>
     
     <!-- GitHub Link with exactly one space -->
-    <text x="634" y="330" fill="#66D4A3">github.com/iAmBipinPaul</text>
+    <text x="634" y="330" fill="#12C7B7">github.com/iAmBipinPaul</text>
     
     <!-- Separator with exactly one space -->
-    <text x="800" y="330" fill="#F5F5F5">|</text>
+    <text x="800" y="330" fill="#F3F6FB">|</text>
     
     <!-- Twitter/X Link with exactly one space -->
-    <text x="809" y="330" fill="#66D4A3">x.com/iAmBipinPaul</text>
+    <text x="809" y="330" fill="#12C7B7">x.com/iAmBipinPaul</text>
   </g>
 </svg>
