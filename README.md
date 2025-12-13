@@ -1,15 +1,30 @@
-### ASP.NET Core, Blazor & Azure Cloud Expert | 7+ Years Exp.
+![Bipin Paul - ASP.NET Core & Blazor Expert](cover-image.svg)
 
-Hi! I’m a dedicated .NET Core and Blazor developer with over 7 years of experience in building web applications across different sectors, including social media and healthcare. My focus is on backend services, but I’m also skilled in full-stack projects
+<div align="center">
 
-Core  Skills:
-* ASP.NET Core & Blazor: Creating dynamic and responsive web applications.
-* Databases: Experienced in MS SQL and PostgreSQL for robust data management
+### Hey, I'm Bipin Paul 👋
 
-Cloud ☁️ Expertise:
-* Azure Services: I work with Functions, Cosmos DB, Service Bus, and more to build scalable cloud solutions.
-* Google Cloud: Proficient in deploying services using Cloud Functions and Cloud Run.
+I've spent the last **7+ years** building web applications for everything from social media platforms to healthcare systems. My favorite stack is **.NET Core** and **Blazor**, and while I specialize in solving complex backend problems, I'm just as comfortable working across the full stack.
 
-Supporting Skills: Docker, GitHub Actions, Azure DevOps 
+</div>
 
-I’m all about continuous learning and taking on new web development challenges. My goal is to deliver high-quality work that aligns with your expectations. Communication is key for me, and I’m always open to feedback.
+---
+
+### 🛠️ What I Work With
+*   **The Core**: ASP.NET Core & Blazor are my go-to tools for building fast, reliable web apps.
+*   **Data**: I rely on **MS SQL** and **PostgreSQL** to keep data organized and scalable.
+
+### ☁️ Cloud & Ops
+*   **Azure**: I use Functions, Cosmos DB, and Service Bus to build cloud-native solutions.
+*   **Google Cloud**: Experienced with deploying to Cloud Functions and Cloud Run.
+*   **Toolbelt**: `Docker` • `GitHub Actions` • `Azure DevOps`
+
+---
+
+<div align="center">
+
+I believe software development is a craft that never stops evolving. I'm always learning new patterns, trying new tools, and looking for the next interesting challenge.
+
+Let's build something great together.
+
+</div>
