@@ -1,155 +1,80 @@
-<svg width="2560" height="1440" viewBox="0 0 2560 1440" xmlns="http://www.w3.org/2000/svg">
+<svg width="2560" height="1440" viewBox="0 0 2560 1440" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Gradient definitions for modern look -->
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B1020"/>
-      <stop offset="50%" stop-color="#0D1225"/>
-      <stop offset="100%" stop-color="#0B1020"/>
+    <!-- Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap');
+      .text-name { font-family: 'Inter', sans-serif; font-weight: 800; fill: #FFFFFF; font-size: 80px; letter-spacing: -2px; }
+      .text-title { font-family: 'Inter', sans-serif; font-weight: 600; fill: #EBEFF5; font-size: 28px; letter-spacing: 0.5px; }
+      .text-stack { font-family: 'Inter', sans-serif; font-weight: 500; fill: #12C7B7; font-size: 20px; letter-spacing: 2px; text-transform: uppercase; }
+      .text-links { font-family: 'Inter', sans-serif; font-weight: 400; fill: #D8DEE8; font-size: 20px; letter-spacing: 0.5px; }
+      .glass-card { fill: rgba(255, 255, 255, 0.03); stroke: #2A3142; stroke-width: 2; }
+    </style>
+
+    <!-- Background Gradient -->
+    <linearGradient id="bg-gradient-s" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1020" />
+      <stop offset="100%" stop-color="#24124D" />
     </linearGradient>
-    
-    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4B2AE8"/>
-      <stop offset="100%" stop-color="#3B21B8"/>
-    </linearGradient>
-    
-    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#12C7B7"/>
-      <stop offset="100%" stop-color="#0EA89A"/>
-    </linearGradient>
-    
-    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#4B2AE8" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#4B2AE8" stop-opacity="0"/>
-    </linearGradient>
-    
-    <!-- Modern text gradient -->
-    <linearGradient id="nameGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="40%" stop-color="#F3F6FB"/>
-      <stop offset="100%" stop-color="#12C7B7"/>
-    </linearGradient>
-    
-    <!-- Subtle grid pattern -->
-    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
-      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#2A3142" stroke-width="0.5" opacity="0.3"/>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid-pattern-s" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#5B6477" fill-opacity="0.2" />
     </pattern>
-    
-    <!-- Glow filter -->
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+
+    <!-- Noise Filter -->
+    <filter id="noise-s" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0" />
+      <feComposite operator="in" in2="SourceGraphic" result="monoNoise" />
+      <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
     </filter>
-    
-    <!-- Soft shadow -->
-    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.3"/>
+
+    <!-- Glow Filter -->
+    <filter id="glow-s" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="100" result="coloredBlur" />
     </filter>
   </defs>
+
+  <!-- Base Background -->
+  <rect width="2560" height="1440" fill="url(#bg-gradient-s)" />
   
-  <!-- Background -->
-  <rect width="2560" height="1440" fill="url(#bgGradient)"/>
-  <rect width="2560" height="1440" fill="url(#grid)"/>
+  <!-- Ambient Glows (larger and spread out for 4K canvas) -->
+  <circle cx="500" cy="400" r="400" fill="#4B2AE8" fill-opacity="0.4" filter="url(#glow-s)" />
+  <circle cx="2000" cy="1000" r="350" fill="#12C7B7" fill-opacity="0.3" filter="url(#glow-s)" />
   
-  <!-- Decorative side accents -->
-  <rect x="0" y="0" width="8" height="1440" fill="url(#primaryGradient)"/>
-  <rect x="2552" y="0" width="8" height="1440" fill="url(#primaryGradient)"/>
+  <!-- Grid Pattern Overlay -->
+  <rect width="2560" height="1440" fill="url(#grid-pattern-s)" />
+
+  <!-- Noise Overlay -->
+  <rect width="2560" height="1440" fill="transparent" filter="url(#noise-s)" opacity="0.6" />
+
+  <!-- GLASS CARD CONTAINER (Centered in Safe Zone) -->
+  <!-- Safe Zone Center Y = 720. Height approx 423. -->
+  <!-- Card Size: 1400w x 400h -->
+  <!-- X = (2560 - 1400)/2 = 580 -->
+  <!-- Y = (1440 - 400)/2 = 520 -->
   
-  <!-- Modern geometric accents -->
-  <polygon points="0,0 500,0 0,250" fill="#12C7B7" opacity="0.06"/>
-  <polygon points="2560,1440 2060,1440 2560,1190" fill="#12C7B7" opacity="0.06"/>
-  
-  <!-- Floating orbs for depth -->
-  <circle cx="200" cy="200" r="120" fill="#4B2AE8" opacity="0.04"/>
-  <circle cx="2360" cy="1240" r="150" fill="#12C7B7" opacity="0.04"/>
-  <circle cx="300" cy="1200" r="80" fill="#4B2AE8" opacity="0.03"/>
-  <circle cx="2260" cy="240" r="100" fill="#12C7B7" opacity="0.03"/>
-  
-  <!-- Subtle line accents -->
-  <line x1="100" y1="400" x2="100" y2="700" stroke="#4B2AE8" stroke-width="2" opacity="0.2"/>
-  <line x1="2460" y1="740" x2="2460" y2="1040" stroke="#12C7B7" stroke-width="2" opacity="0.2"/>
-  
-  <!-- Tech icons - refined and subtle -->
-  <g opacity="0.06">
-    <g transform="translate(220, 350)">
-      <rect x="-40" y="-40" width="80" height="80" rx="12" fill="#4B2AE8"/>
-      <text x="0" y="18" font-family="Arial, sans-serif" font-size="50" font-weight="bold" text-anchor="middle" fill="#FFFFFF">C#</text>
-    </g>
-    <g transform="translate(2340, 350)">
-      <circle cx="0" cy="0" r="50" fill="#4B2AE8"/>
-      <text x="0" y="12" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#FFFFFF">.NET</text>
-    </g>
-    <g transform="translate(300, 1050)">
-      <path d="M-35,-45 L35,-45 L0,45 Z" fill="#4B2AE8"/>
-    </g>
-    <g transform="translate(2260, 1050)">
-      <path d="M-30,-15 Q-10,-35 10,-15 Q25,-30 40,-15 L40,15 L-30,15 Z" fill="#4B2AE8"/>
-    </g>
-    <g transform="translate(550, 720)">
-      <path d="M-25,-35 Q-25,-50 0,-50 Q25,-50 25,-35 L25,35 Q25,50 0,50 Q-25,50 -25,35 Z" fill="#4B2AE8"/>
-    </g>
-    <g transform="translate(2010, 720)">
-      <rect x="-35" y="-25" width="25" height="18" fill="#4B2AE8"/>
-      <rect x="-35" y="-3" width="25" height="18" fill="#4B2AE8"/>
-      <rect x="-5" y="-25" width="25" height="18" fill="#4B2AE8"/>
-      <rect x="-5" y="-3" width="25" height="18" fill="#4B2AE8"/>
-      <rect x="-5" y="19" width="25" height="18" fill="#4B2AE8"/>
-    </g>
+  <rect x="580" y="520" width="1400" height="400" rx="24" class="glass-card" />
+
+  <!-- Content Group -->
+  <g text-anchor="middle">
+    <!-- Name -->
+    <text x="1280" y="650" class="text-name">BIPIN PAUL</text>
+    
+    <!-- Title -->
+    <text x="1280" y="710" class="text-title">ASP.NET Core, Blazor &amp; Azure Cloud Expert</text>
+    
+    <!-- Separator -->
+    <text x="1280" y="750" fill="#5B6477" font-size="20" font-family="Inter, sans-serif">7+ YEARS EXPERIENCE</text>
+
+    <!-- Tech Stack -->
+    <text x="1280" y="810" class="text-stack">
+      .NET CORE  •  BLAZOR  •  AZURE CLOUD  •  SQL/POSTGRESQL
+    </text>
+
+    <!-- Links -->
+    <text x="1280" y="870" class="text-links">
+      bipinpaul.com  <tspan fill="#5B6477" dx="15" dy="0">|</tspan>  <tspan dx="15">github.com/iAmBipinPaul</tspan>  <tspan fill="#5B6477" dx="15" dy="0">|</tspan>  <tspan dx="15">x.com/iAmBipinPaul</tspan>
+    </text>
   </g>
-  
-  <!-- Main content area - centered in safe zone -->
-  <g transform="translate(1280, 0)">
-    <!-- Name with modern gradient -->
-    <text x="0" y="600" font-family="Arial, sans-serif" font-size="96" font-weight="700" text-anchor="middle" fill="url(#nameGradient)">Bipin Paul</text>
-    
-    <!-- Accent underline -->
-    <rect x="-280" y="630" width="560" height="5" rx="2.5" fill="url(#accentGradient)"/>
-    
-    <!-- Tagline -->
-    <text x="0" y="690" font-family="Arial, sans-serif" font-size="32" font-weight="400" text-anchor="middle" fill="#F3F6FB">ASP.NET Core, Blazor &amp; Azure Cloud Expert | 7+ Years Exp.</text>
-  </g>
-  
-  <!-- Core Technologies - pill badges -->
-  <g font-family="Arial, sans-serif" font-size="22" font-weight="500" filter="url(#softShadow)">
-    <rect x="860" y="740" width="180" height="46" rx="23" fill="#4B2AE8"/>
-    <text x="950" y="770" text-anchor="middle" fill="#FFFFFF">.NET Core</text>
-    
-    <rect x="1060" y="740" width="150" height="46" rx="23" fill="#4B2AE8"/>
-    <text x="1135" y="770" text-anchor="middle" fill="#FFFFFF">Blazor</text>
-    
-    <rect x="1230" y="740" width="190" height="46" rx="23" fill="#4B2AE8"/>
-    <text x="1325" y="770" text-anchor="middle" fill="#FFFFFF">Azure Cloud</text>
-    
-    <rect x="1440" y="740" width="240" height="46" rx="23" fill="#4B2AE8"/>
-    <text x="1560" y="770" text-anchor="middle" fill="#FFFFFF">MS SQL/PostgreSQL</text>
-  </g>
-  
-  <!-- Supporting Skills - secondary badges -->
-  <g font-family="Arial, sans-serif" font-size="18" font-weight="400">
-    <rect x="920" y="810" width="130" height="38" rx="19" fill="#2A3142" stroke="#5B6477" stroke-width="1"/>
-    <text x="985" y="835" text-anchor="middle" fill="#D8DEE8">Docker</text>
-    
-    <rect x="1070" y="810" width="180" height="38" rx="19" fill="#2A3142" stroke="#5B6477" stroke-width="1"/>
-    <text x="1160" y="835" text-anchor="middle" fill="#D8DEE8">GitHub Actions</text>
-    
-    <rect x="1270" y="810" width="170" height="38" rx="19" fill="#2A3142" stroke="#5B6477" stroke-width="1"/>
-    <text x="1355" y="835" text-anchor="middle" fill="#D8DEE8">Azure DevOps</text>
-    
-    <rect x="1460" y="810" width="170" height="38" rx="19" fill="#2A3142" stroke="#5B6477" stroke-width="1"/>
-    <text x="1545" y="835" text-anchor="middle" fill="#D8DEE8">Google Cloud</text>
-  </g>
-  
-  <!-- Contact links - clean and minimal -->
-  <g font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400">
-    <text x="1000" y="900" fill="#12C7B7">bipinpaul.com</text>
-    <circle cx="1120" cy="894" r="3" fill="#5B6477"/>
-    <text x="1150" y="900" fill="#12C7B7">github.com/iAmBipinPaul</text>
-    <circle cx="1390" cy="894" r="3" fill="#5B6477"/>
-    <text x="1420" y="900" fill="#12C7B7">x.com/iAmBipinPaul</text>
-  </g>
-  
-  <!-- Bottom accent line -->
-  <rect x="980" y="960" width="600" height="2" fill="url(#primaryGradient)" opacity="0.4"/>
 </svg>
