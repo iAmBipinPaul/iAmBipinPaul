@@ -3,22 +3,22 @@
     <!-- Fonts -->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap');
-      .text-name { font-family: 'Inter', sans-serif; font-weight: 800; fill: #FFFFFF; font-size: 48px; letter-spacing: -1.5px; }
-      .text-title { font-family: 'Inter', sans-serif; font-weight: 600; fill: #EBEFF5; font-size: 18px; letter-spacing: 0.5px; }
-      .text-stack { font-family: 'Inter', sans-serif; font-weight: 500; fill: #12C7B7; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; }
-      .text-links { font-family: 'Inter', sans-serif; font-weight: 400; fill: #D8DEE8; font-size: 14px; letter-spacing: 0.5px; }
-      .glass-card { fill: rgba(255, 255, 255, 0.03); stroke: #2A3142; stroke-width: 1; }
+      .text-name { font-family: 'Inter', sans-serif; font-weight: 800; fill: #F8FAFC; font-size: 48px; letter-spacing: -1.5px; }
+      .text-title { font-family: 'Inter', sans-serif; font-weight: 600; fill: #CBD5E1; font-size: 18px; letter-spacing: 0.5px; }
+      .text-stack { font-family: 'Inter', sans-serif; font-weight: 500; fill: #06B6D4; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; }
+      .text-links { font-family: 'Inter', sans-serif; font-weight: 400; fill: #94A3B8; font-size: 14px; letter-spacing: 0.5px; }
+      .glass-card { fill: rgba(30, 41, 59, 0.7); stroke: rgba(255, 255, 255, 0.08); stroke-width: 1; }
     </style>
 
     <!-- Background Gradient -->
     <linearGradient id="bg-gradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0B1020" />
-      <stop offset="100%" stop-color="#24124D" />
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#3D1A99" />
     </linearGradient>
 
     <!-- Grid Pattern -->
     <pattern id="grid-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r="1" fill="#5B6477" fill-opacity="0.2" />
+      <circle cx="1" cy="1" r="1" fill="#64748B" fill-opacity="0.2" />
     </pattern>
 
     <!-- Noise Filter -->
@@ -39,8 +39,8 @@
   <rect width="1200" height="400" fill="url(#bg-gradient)" />
   
   <!-- Ambient Glows (Centered Layout) -->
-  <circle cx="200" cy="100" r="150" fill="#4B2AE8" fill-opacity="0.4" filter="url(#glow)" />
-  <circle cx="1000" cy="300" r="120" fill="#12C7B7" fill-opacity="0.3" filter="url(#glow)" />
+  <circle cx="200" cy="100" r="150" fill="#764AF1" fill-opacity="0.4" filter="url(#glow)" />
+  <circle cx="1000" cy="300" r="120" fill="#06B6D4" fill-opacity="0.3" filter="url(#glow)" />
   
   <!-- Grid Pattern Overlay -->
   <rect width="1200" height="400" fill="url(#grid-pattern)" />
@@ -61,7 +61,7 @@
     <text x="600" y="190" class="text-title">ASP.NET Core, Blazor &amp; Azure Cloud Expert</text>
     
     <!-- Separator -->
-    <text x="600" y="215" fill="#5B6477" font-size="12" font-family="Inter, sans-serif">7+ YEARS EXPERIENCE</text>
+    <text x="600" y="215" fill="#64748B" font-size="12" font-family="Inter, sans-serif">7+ YEARS EXPERIENCE</text>
 
     <!-- Tech Stack -->
     <text x="600" y="255" class="text-stack">
@@ -70,7 +70,7 @@
 
     <!-- Links -->
     <text x="600" y="300" class="text-links">
-      bipinpaul.com  <tspan fill="#5B6477" dx="10" dy="0">|</tspan>  <tspan dx="10">github.com/iAmBipinPaul</tspan>  <tspan fill="#5B6477" dx="10" dy="0">|</tspan>  <tspan dx="10">x.com/iAmBipinPaul</tspan>
+      bipinpaul.com  <tspan fill="#64748B" dx="10" dy="0">|</tspan>  <tspan dx="10">github.com/iAmBipinPaul</tspan>  <tspan fill="#64748B" dx="10" dy="0">|</tspan>  <tspan dx="10">x.com/iAmBipinPaul</tspan>
     </text>
   </g>
 </svg>
