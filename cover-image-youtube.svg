@@ -2,8 +2,8 @@
   <defs>
     <!-- Fonts -->
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap');
-      .text-name { font-family: 'Inter', sans-serif; font-weight: 800; fill: #F8FAFC; font-size: 80px; letter-spacing: -2px; }
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&amp;family=Inter:wght@400;600&amp;display=swap');
+      .text-name { font-family: 'Outfit', sans-serif; font-weight: 700; fill: #F8FAFC; font-size: 80px; letter-spacing: -2px; }
       .text-title { font-family: 'Inter', sans-serif; font-weight: 600; fill: #CBD5E1; font-size: 28px; letter-spacing: 0.5px; }
       .text-stack { font-family: 'Inter', sans-serif; font-weight: 500; fill: #06B6D4; font-size: 20px; letter-spacing: 2px; text-transform: uppercase; }
       .text-links { font-family: 'Inter', sans-serif; font-weight: 400; fill: #94A3B8; font-size: 20px; letter-spacing: 0.5px; }
@@ -12,8 +12,8 @@
 
     <!-- Background Gradient -->
     <linearGradient id="bg-gradient-s" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0F172A" />
-      <stop offset="100%" stop-color="#3D1A99" />
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#0F172A" />
     </linearGradient>
 
     <!-- Grid Pattern -->
@@ -24,14 +24,14 @@
     <!-- Noise Filter -->
     <filter id="noise-s" x="0" y="0" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
-      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.03 0" />
       <feComposite operator="in" in2="SourceGraphic" result="monoNoise" />
       <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
     </filter>
 
     <!-- Glow Filter -->
     <filter id="glow-s" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="100" result="coloredBlur" />
+      <feGaussianBlur stdDeviation="150" result="coloredBlur" />
     </filter>
   </defs>
 
@@ -39,22 +39,17 @@
   <rect width="2560" height="1440" fill="url(#bg-gradient-s)" />
   
   <!-- Ambient Glows (larger and spread out for 4K canvas) -->
-  <circle cx="500" cy="400" r="400" fill="#764AF1" fill-opacity="0.4" filter="url(#glow-s)" />
-  <circle cx="2000" cy="1000" r="350" fill="#06B6D4" fill-opacity="0.3" filter="url(#glow-s)" />
+  <circle cx="500" cy="400" r="400" fill="#764AF1" fill-opacity="0.3" filter="url(#glow-s)" />
+  <circle cx="2000" cy="1000" r="350" fill="#06B6D4" fill-opacity="0.2" filter="url(#glow-s)" />
   
   <!-- Grid Pattern Overlay -->
   <rect width="2560" height="1440" fill="url(#grid-pattern-s)" />
 
   <!-- Noise Overlay -->
-  <rect width="2560" height="1440" fill="transparent" filter="url(#noise-s)" opacity="0.6" />
+  <rect width="2560" height="1440" fill="transparent" filter="url(#noise-s)" />
 
   <!-- GLASS CARD CONTAINER (Centered in Safe Zone) -->
-  <!-- Safe Zone Center Y = 720. Height approx 423. -->
-  <!-- Card Size: 1400w x 400h -->
-  <!-- X = (2560 - 1400)/2 = 580 -->
-  <!-- Y = (1440 - 400)/2 = 520 -->
-  
-  <rect x="580" y="520" width="1400" height="400" rx="24" class="glass-card" />
+  <rect x="580" y="520" width="1400" height="400" rx="36" class="glass-card" />
 
   <!-- Content Group -->
   <g text-anchor="middle">
